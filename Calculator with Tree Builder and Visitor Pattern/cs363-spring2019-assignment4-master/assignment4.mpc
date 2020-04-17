@@ -1,0 +1,32 @@
+project (assignment4) {
+  exename = assignment4
+  install = .
+ 
+  specific (make, gnuace) {
+    compile_flags += -std=c++11
+  }
+
+  Source_Files {
+    driver.cpp
+	Node.cpp
+	Op_Node.cpp
+	Binary_Node.cpp
+	Number_Node.cpp
+	Sub_Node.cpp
+	Add_Node.cpp
+	Mult_Node.cpp
+	Div_Node.cpp
+	Mod_Node.cpp
+	Node_Visitor.cpp
+	Eval_Tree.cpp
+	Calculator.cpp
+	Expr_Builder.cpp
+	Tree_Builder.cpp
+  }
+
+  Template_Files {
+    Stack.cpp
+	Array.cpp
+	Array_Base.cpp
+  }
+}

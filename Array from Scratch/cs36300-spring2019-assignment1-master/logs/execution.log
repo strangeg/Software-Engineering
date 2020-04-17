@@ -1,0 +1,20 @@
+
+=== constructors ===
+
+> default constructor
+> copy constructor
+> fill constructor
+
+=== (in)equality operators in conjunction with the resize method ===
+
+
+=== search ===
+
+
+=== assignment with scoped arrays ===
+
+
+=== resize with shrink combinations ===
+
+
+23 out of 23 passed

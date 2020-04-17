@@ -1,0 +1,10 @@
+Generating 'make' output using default input
+Generation Time: 0s
+make[1]: Entering directory `/home/hilljh/temp/cs363/assignment1/strangeg/cs36300-spring2019-assignment1'
+rm -rf Array.o driver.o
+make[1]: Leaving directory `/home/hilljh/temp/cs363/assignment1/strangeg/cs36300-spring2019-assignment1'
+make[1]: Entering directory `/home/hilljh/temp/cs363/assignment1/strangeg/cs36300-spring2019-assignment1'
+g++  -fPIC -O -std=c++11 -D_REENTRANT -c  -o "Array.o" Array.cpp
+g++  -fPIC -O -std=c++11 -D_REENTRANT -c  -o "driver.o" driver.cpp
+g++  -fPIC -O -std=c++11 -D_REENTRANT -L"." Array.o driver.o -ldl -lrt -lpthread -o "Array"
+make[1]: Leaving directory `/home/hilljh/temp/cs363/assignment1/strangeg/cs36300-spring2019-assignment1'

@@ -187,6 +187,9 @@ public:
   /// the last element and the last element is the first element.
   void reverse (void);
   
+  /// Sort the array from min to max using the newest industry methods
+  int sort (void);
+  
   /**
    * The slice() method returns a shallow copy of a portion of an array into
    * a new array object selected from begin to end (end not included). The original

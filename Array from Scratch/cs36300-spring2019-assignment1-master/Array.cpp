@@ -7,6 +7,8 @@
 
 #include "Array.h"
 #include <stdexcept>
+#include <random>
+#include <time.h>
 
 Array::Array (void)
 // COMMENT Initialize all member variables in the base member initialization section
@@ -359,6 +361,35 @@ void Array::reverse (void)
 		end--;
 		
 	}
+}
+
+int Array::sort(void)
+{
+	srand(time(NULL));
+	bool sort = false;
+	char temp;
+	int i1;
+	int i2;
+	long iterations;
+	while(!sort)
+	{
+		sort = true;
+		i1 = rand()%cur_size_;
+		i2 = rand()%cur_size_;
+		temp = data_[i1];
+		data_[i1] = data_[i2];
+		data_[i2] = temp;
+		for(i1 = 0;i1<cur_size_ - 1;i1++)
+		{
+			if(data_[i1] > data_[i1+1])
+			{
+				sort = false;
+				break;
+			}
+		}
+		iterations++;
+	}
+	return iterations;	
 }
 
 Array Array::slice (size_t begin) const
